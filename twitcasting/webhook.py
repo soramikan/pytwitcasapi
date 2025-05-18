@@ -24,7 +24,6 @@ class Webhook:
             raise ValueError("event cannot be empty")
         if self.event not in ["livestart", "liveend"]:
             raise ValueError("event must be either 'livestart' or 'liveend'")
-        self._validate()
 
     def __init__(self, user_id: str, event: str):
         """

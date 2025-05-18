@@ -79,7 +79,6 @@ class App:
         """
         if not self.client_id or not self.name or not self.owner_user_id:
             raise ValueError("client_id, name, and owner_user_id are required.")
-        self._validate()
 
     def __init__(self, client_id: str, name: str, owner_user_id: str) -> None:
         """
